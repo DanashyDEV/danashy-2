@@ -1,0 +1,365 @@
+/* logotype */
+
+.logotype {
+    grid-column: 1/2;
+    grid-row: 1/4;
+
+    cursor: default;
+}
+
+.danashy {
+    width: 100px;
+    height: 100px;
+}
+
+.phrase {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+
+    background-color: black;
+}
+
+.subtitle {
+    margin-top: 5px;
+
+    text-align: center;
+    font-weight: 600;
+}
+
+/* hamburguer*/
+
+.viewOptions {
+    display: none;
+}
+
+/* box navbar and information */
+
+.generalInformation {
+    display: grid;
+    grid-template-rows: repeat(3, 40px);
+}
+
+/* contact bar*/
+
+.information {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.data {
+    width: 780px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom-left-radius: 25px;
+
+    background: linear-gradient(-45deg,
+            rgb(246, 54, 86),
+            rgb(0, 147, 132),
+            rgb(0, 0, 56) 50%);
+}
+
+.contactUsBox {
+    width: 55%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactUs {
+    display: flex;
+    align-items: center;
+}
+
+.textContact {
+    color: white;
+}
+
+.socialMedia {
+    width: 20%;
+
+    justify-content: flex-end;
+}
+
+.iconBox {
+    margin-right: 10px;
+}
+
+.icons {
+    width: 18px;
+    height: 18px;
+}
+
+/* navbar */
+
+.navegationBox {
+    grid-column: 2/3;
+    grid-row: 2/4;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navegation {
+    width: 780px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navegation>li {
+    height: 100%;
+
+    float: left;
+}
+
+.subList {
+    position: relative;
+}
+
+.link {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 20px;
+
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.up {
+    width: 0;
+    height: 0;
+
+    margin-left: 10px;
+
+    border-top: 10px solid rgb(0, 0, 0);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.subMenu {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+
+    transition-duration: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.subOptionsBox {
+    width: 100%;
+    height: 60px;
+
+    border-radius: 5px;
+    
+    background: rgba(189, 188, 188, 0.822);
+}
+
+.linkNavegation {
+    padding: 0 5px;
+
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* effects */
+
+.subList:hover>.link,
+.subOptionsBox:hover>.link {
+    color: rgb(0, 147, 132);
+}
+
+.subList:hover>.link .up {
+    border-top: 10px solid rgb(0, 147, 132)
+}
+
+.navegation li:hover>ul {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    transition-duration: 0.5s;
+}
+
+/* center */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    /* logotype */
+    .danashy {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logotype {
+        margin-left: 10px;
+    }
+
+    .phrase {
+        display: none;
+    }
+
+    /* hamburguer */
+
+    .viewOptions {
+        display: flex;
+
+        margin: auto 10px auto auto;
+    }
+
+    /* box navbar and information */
+
+    .generalInformation {
+        width: 100%;
+        height: 280px;
+
+        position: absolute;
+        top: 80px;
+
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 15px;
+
+        backdrop-filter: blur(50px);
+        background: rgba(189, 189, 189, 0.952);
+
+        overflow-y: scroll;
+
+        z-index: -10;
+    }
+
+    .generalInformation::-webkit-scrollbar {
+        width: 0px;
+      }
+
+    .showMenu {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+        transition-duration: 0.5s;
+    }
+
+    .collapseMenu {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        transition-duration: 0.5s;
+    }
+
+    /* navbar */
+
+    .navegationBox {
+        display: flex;
+
+        z-index: -10;
+    }
+
+    .navegation {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+    .up {
+        display: none;
+    }
+
+    .navegation>li {
+        width: 100%;
+        height: 80px;
+    }
+
+    .subList {
+        position: relative;
+    }
+
+    .link {
+        padding: 0;
+    }
+
+    .subMenu {
+        width: 250px;
+
+        top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        z-index: 10;
+    }
+
+    .subOptionsBox {
+        background: rgba(189, 188, 188, 0.822);
+    }
+
+    /* contact bar*/
+
+    .information {
+        display: flex;
+
+        z-index: -10;
+    }
+
+    .data {
+        width: 100%;
+
+        padding: 5px 0;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .contactUsBox {
+        width: 100%;
+
+        padding: 10px 0;
+
+        flex-direction: column;
+    }
+
+    .contactUs {
+        padding: 5px 0;
+    }
+
+    .socialMedia {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .iconBox {
+        margin: 0 15px;
+    }
+
+    /* effects */
+
+    .navegation li:hover>ul {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+}

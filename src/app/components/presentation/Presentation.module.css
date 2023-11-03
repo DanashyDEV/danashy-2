@@ -1,0 +1,111 @@
+.background {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+}
+
+.mision {
+  width: 45%;
+
+  position: absolute;
+  top: 150px;
+  left: 3%;
+
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 35px;
+  color: white;
+}
+
+.video1 {
+  width: 650px;
+
+  position: absolute;
+  top: 170px;
+  right: 25%;
+  transform: translateX(50%);
+}
+
+.vision {
+  width: 45%;
+
+  position: absolute;
+  bottom: 150px;
+  right: 3.5%;
+
+  text-align: right;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 35px;
+  color: white;
+}
+
+.video2 {
+  width: 650px;
+
+  position: absolute;
+  bottom: 90px;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1470px) {
+  .vision {
+    font-size: 28px;
+  }
+
+  .mision {
+    font-size: 28px;
+  }
+  .video1 {
+    width: 450px;
+  }
+
+  .video2 {
+    width: 450px;
+
+    bottom: 180px;
+  }
+}
+
+@media only screen and (max-width: 999.99px) {
+    .mision {
+        width: 95%;
+        position: relative;
+      
+        font-size: 28px;
+      }
+      
+      .video1 {
+        width: 80%;
+        position: relative;
+        margin: 20px auto auto -5%;
+      }
+      
+      .vision {
+        width: 90%;
+        position: relative;
+        margin: 350px auto auto 30px;
+      
+        text-align: left;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 35px;
+        color: white;
+      }
+      
+      .video2 {
+        width: 80%;
+        position: relative;
+
+        margin: 20px -20px auto auto;
+      }
+  }
+  

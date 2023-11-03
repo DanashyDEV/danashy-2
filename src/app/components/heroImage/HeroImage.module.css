@@ -1,0 +1,150 @@
+.heroImages {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  filter: opacity(70%);
+}
+
+.information {
+  width: 1200px;
+
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+  transform: translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  text-align: right;
+  color: white;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.description {
+  width: 1000px;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  font-size: 35px;
+}
+
+.btnContactUs {
+  width: 200px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  border: 2px solid white;
+
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+
+  background: linear-gradient(
+    -45deg,
+    rgb(246, 54, 86),
+    rgb(0, 147, 132),
+    rgb(0, 0, 56) 50%
+  );
+}
+
+@media only screen and (min-width: 470px) and (max-width: 1200px) {
+  .heroImages {
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    filter: opacity(70%);
+  }
+
+  .information {
+    width: 95%;
+
+    align-items: flex-start;
+
+    text-align: left;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .description {
+    width: 95%;
+
+    font-size: 2rem;
+  }
+
+  .btnContactUs {
+    width: 180px;
+    height: 50px;
+
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 469.9px) {
+  .information {
+    width: 95%;
+
+    align-items: flex-start;
+
+    text-align: left;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .description {
+    width: 95%;
+
+    font-size: 1.5rem;
+  }
+
+  .btnContactUs {
+    width: 150px;
+    height: 50px;
+
+    font-size: 16px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 550px) {
+  .information {
+    width: 95.5%;
+    height: 100vh;
+
+    position: absolute;
+    top: 50%;
+    right: 0%;
+
+    align-items: flex-start;
+
+    text-align: left;
+
+    overflow-y: scroll;
+  }
+
+  .title {
+    margin-top: 100px;
+  }
+
+  .btnContactUs {
+    margin-bottom: 50px;
+  }
+}
