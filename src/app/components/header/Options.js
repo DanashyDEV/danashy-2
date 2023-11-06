@@ -50,8 +50,8 @@ export const ContactUs = [
   {
     src: letter,
     alt: "letter",
-    href: "mailto:danashy.develop@gmail.com?subject=Solicito más información",
-    description: "contacto@danashy.com.mx",
+    href: "mailto:contacto@danashy.mx?subject=Solicito más información",
+    description: "contacto@danashy.mx",
   },
 ];
 
