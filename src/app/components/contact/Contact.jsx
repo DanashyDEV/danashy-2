@@ -39,7 +39,7 @@ export default function Contact() {
         </div>
         <form
           className={`${style.form}`}
-          action="https://formsubmit.co/danashy.develop@gmail.com"
+          action="https://formsubmit.co/contacto@danashy.mx"
           method="POST"
         >
           <div className={style.subTitle}>Contáctanos</div>
